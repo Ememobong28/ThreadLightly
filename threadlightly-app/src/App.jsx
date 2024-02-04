@@ -13,16 +13,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="site-container"> {/* Wrapper for sticky footer */}
+      <div className="site-container">
         <Navbar />
-        <div className="content-wrap"> {/* Content wrapper for pushing the footer down */}
+        <div className="content-wrap">
           <Routes>
             <Route path='/' element={<HomePage />}></Route>
             <Route path='/signup' element={<Signup />}></Route>
             <Route path='/login' element={<Login />}></Route>
           </Routes>
         </div>
-        <Footer /> {/* Footer outside the Routes but inside the site-container */}
+        <Footer />
       </div>
     </BrowserRouter>
   )

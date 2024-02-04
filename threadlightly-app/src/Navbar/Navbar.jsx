@@ -10,10 +10,10 @@ function Navbar() {
                 </a>
                 <ul className="nav-menu">
                     <li className="nav-item">
-                        <a href="/" className="nav-links">Dashboard</a>
+                        <a href="/dashboard" className="nav-links">Dashboard</a>
                     </li>
                     <li className="nav-item">
-                        <a href="/about" className="nav-links">About Us</a>
+                        <a href="/" className="nav-links">About Us</a>
                     </li>
                     <li className="nav-item">
                         <a href="/login" className="nav-links">Login</a>

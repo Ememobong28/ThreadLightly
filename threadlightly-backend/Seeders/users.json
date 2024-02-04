@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "firstname": "Alex",
+        "lastname": "Johnson",
+        "email": "alex.johnson@newsrealm.com",
+        "password": "password1",
+        "updates": true,
+        "terms": true
+    },
+    {
+        "id": 2,
+        "firstname": "Samantha",
+        "lastname": "Lee",
+        "email": "samantha.lee@newsrealm.com",
+        "password": "password2",
+        "updates": true,
+        "terms": true
+    },
+    {
+        "id": 3,
+        "firstname": "Raj",
+        "lastname": "Patel",
+        "email": "raj.patel@newsrealm.com",
+        "password": "password3",
+        "updates": true,
+        "terms": true
+    },
+    {
+        "id": 4,
+        "firstname": "Linda",
+        "lastname": "García",
+        "email": "linda.garcia@newsrealm.com",
+        "password": "password4",
+        "updates": true,
+        "terms": true
+    },
+    {
+        "id": 5,
+        "firstname": "Omar",
+        "lastname": "Farouk",
+        "email": "omar.farouk@newsrealm.com",
+        "password": "password5",
+        "updates": true,
+        "terms": true
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "user_id": 1,
+        "title": "The Political Landscape After Recent Elections",
+        "content": "A deep dive into the shifts in political alliances and voter sentiments after the surprising election results."
+    },
+    {
+        "id": 2,
+        "user_id": 3,
+        "title": "Global Markets React to New Economic Policies",
+        "content": "Analyzing the tremors felt in global markets in response to the newly announced economic policies from major economies."
+    },
+    {
+        "id": 3,
+        "user_id": 4,
+        "title": "Breakthroughs in Renewable Energy Technology",
+        "content": "Exploring the latest breakthroughs in renewable energy technologies and their potential impact on the future of global energy consumption."
+    }
+]
