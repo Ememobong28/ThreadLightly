@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors())
 app.use(express.json()); 
-app.use(morgan())
+app.use(morgan('combined'));
 
 // Route to get all users
 app.get('/users', async (req, res) => {
