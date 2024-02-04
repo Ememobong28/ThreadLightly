@@ -1,3 +1,7 @@
+body {
+    background-color: #FAFAFA;
+}
+
 .site-container {
     display: flex;
     flex-direction: column;

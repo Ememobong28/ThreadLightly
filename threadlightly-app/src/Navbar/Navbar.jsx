@@ -16,10 +16,10 @@ function Navbar() {
                         <a href="/about" className="nav-links">About Us</a>
                     </li>
                     <li className="nav-item">
-                        <a href="/services" className="nav-links">Login</a>
+                        <a href="/login" className="nav-links">Login</a>
                     </li>
                     <li className="nav-item">
-                        <a href="/contact" className="nav-links">Create account</a>
+                        <a href="/signup" className="nav-links">Create account</a>
                     </li>
                 </ul>
             </div>
