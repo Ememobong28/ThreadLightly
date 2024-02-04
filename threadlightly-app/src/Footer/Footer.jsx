@@ -1,23 +1,29 @@
 import React from 'react';
 import './Footer.css';
+import { useNavigate } from 'react-router-dom';
 
 function Footer() {
+
+    const navigate = useNavigate();
+
+    const handleSignUpClick = () => {
+        navigate('/signup');
+    };
     return (
         <footer className="footer">
             <div className="footer-top">
                 <div className="tagline-container">
                     <h2 className="tagline">Choose threads that weave a greener</h2>
                     <h2 className="tagline">tomorrow</h2>
-                    <button className="signup-button">Sign up</button>
+                    <button className="signup-button" onClick={handleSignUpClick} >Sign up </button>
                 </div>
             </div>
             <div className="footer-content">
-                <div className="footer-brand">
-                    <h1>thread lightly</h1>
-                    <p>Green Garments • Global Goodness</p>
-                    {/* Insert social icons here */}
-                </div>
                 <div className="footer-links">
+                    <div className="footer-brand">
+                        <h1>thread lightly</h1>
+                        <p>Green Garments • Global Goodness</p>
+                    </div>
                     <div className="footer-column">
                         <h4>Company</h4>
                         <a href="/about">About Us</a>
@@ -42,7 +48,7 @@ function Footer() {
                     <div className="footer-column">
                         <h4>Contact Us</h4>
                         <p>threadlightly@gmail.com</p>
-                        <p>+92-311-689-2135</p>
+                        <p>704-913-0099</p>
                     </div>
                 </div>
             </div>

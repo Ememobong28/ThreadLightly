@@ -43,12 +43,15 @@ function Signup() {
             if (response.ok) {
                 const data = await response.json();
                 console.log(data);
-                setShowConfetti(true); // Trigger confetti display
+
                 setTimeout(() => {
-                    setShowConfetti(false); // Stop displaying confetti
-                    navigate('/login'); // Navigate to the login page
-                }, 3000); // Wait for 3 seconds before navigating
-                alert("Signup successful!");
+                    setShowConfetti(true);
+                    setTimeout(() => {
+                        setShowConfetti(false);
+                        navigate('/login');
+                        // alert("Signup successful!");
+                    }, 6000);
+                }, 1000);
             } else {
                 const error = await response.json();
                 alert(`Signup failed: ${error.message}`);
@@ -80,8 +83,9 @@ function Signup() {
                     <p className="heading">Stay Updated</p>
                     <div className="checkbox-container">
                         <label className="checkbox-label">
-                            <div className="custom-checkbox">
+                            <div className={`custom-checkbox${formData.updates ? ' checked' : ''}`}>
                                 <input type="checkbox" id="updates" checked={formData.updates} onChange={handleChange} />
+                                <span></span>
                             </div>
                             Yes, I'd like to receive updates and news on sustainable fashion.
                         </label>
@@ -90,8 +94,9 @@ function Signup() {
                     <p className="heading">Agree to Terms</p>
                     <div className="checkbox-container">
                         <label className="checkbox-label">
-                            <div className="custom-checkbox">
+                            <div className={`custom-checkbox${formData.terms ? ' checked' : ''}`}>
                                 <input type="checkbox" id="terms" checked={formData.terms} onChange={handleChange} />
+                                <span></span>
                             </div>
                             I agree to the Terms of Service and Privacy Policy.
                         </label>
