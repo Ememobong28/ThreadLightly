@@ -7,6 +7,7 @@ import Navbar from './Navbar/Navbar'
 import HomePage from './HomePage'
 import Footer from './Footer/Footer'
 import './App.css'
+import Dashboard from './Dashboard/dashboard'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <div className="content-wrap">
           <Routes>
             <Route path='/' element={<HomePage />}></Route>
+            <Route path='/dashboard' element={<Dashboard />}></Route>
             <Route path='/signup' element={<Signup />}></Route>
             <Route path='/login' element={<Login />}></Route>
           </Routes>

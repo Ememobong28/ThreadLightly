@@ -6,24 +6,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Full viewport height */
 }
 
 .content-wrap {
     flex: 1;
-    /* Flex container to push the footer down */
     padding-bottom: var(--footer-height);
-    /* Space for the footer */
 }
 
-/* Add the footer height as a CSS variable */
 :root {
     --footer-height: 200px;
-    /* Adjust to the height of your footer */
 }
 
 .footer {
     height: var(--footer-height);
-    /* Footer height */
-    /* Rest of the footer styles */
 }

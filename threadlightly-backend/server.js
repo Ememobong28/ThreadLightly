@@ -8,7 +8,7 @@ import bcrypt from 'bcryptjs';
 const app = express();
 
 app.use(cors())
-app.use(express.json()); // Middleware for parsing JSON bodies from HTTP requests
+app.use(express.json()); 
 app.use(morgan())
 
 // Route to get all users
