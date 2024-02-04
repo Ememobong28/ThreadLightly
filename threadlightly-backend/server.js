@@ -4,12 +4,22 @@ import morgan from 'morgan';
 import { sequelize } from './database.js';
 import { User, Post } from './models/index.js';
 import bcrypt from 'bcryptjs';
+// import dotenv from 'dotenv';
+// dotenv.config();
+
+// console.log('DB_NAME:', process.env.DB_NAME);
+// console.log('DB_USER:', process.env.DB_USER);
+// console.log('DB_PASSWORD:', process.env.DB_PASSWORD);
+// console.log('DB_HOST:', process.env.DB_HOST);
+// console.log('DB_PORT:', process.env.DB_PORT);
+
 
 const app = express();
 
 app.use(cors())
 app.use(express.json()); 
 app.use(morgan('combined'));
+
 
 // Route to get all users
 app.get('/users', async (req, res) => {
